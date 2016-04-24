@@ -1,3 +1,21 @@
-p {
-    
+div, header, section, footer {
+  border: 1px solid darkgreen;
+}
+​
+header, section, footer {
+  width: 100%;
+  min-height: 200px;
+  margin: 10px 0px;
+  background-color: lightgreen;
+}
+​
+section::before {
+  content: "section# " attr(id);
+}
+header::before {
+  content: "header# " attr(id);
+}
+​
+div::before {
+  content: "class: " attr(class);
 }
