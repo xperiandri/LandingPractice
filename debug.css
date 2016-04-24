@@ -1,21 +1,37 @@
-div, header, section, footer {
+/*div, header, section, footer {
   border: 1px solid darkgreen;
 }
 ​
-header, section, footer {
+header {
+  width: 100%;
+  min-height: 200px;
+  margin: 10px 0px;
+  background-color: lightgreen;
+}
+
+section, footer {
   width: 100%;
   min-height: 200px;
   margin: 10px 0px;
   background-color: lightgreen;
 }
 ​
-section::before {
-  content: "section# " attr(id);
-}
 header::before {
   content: "header# " attr(id);
 }
 ​
+section::before {
+  content: "section# " attr(id);
+}
+
+footer::before {
+  content: "footer# " attr(id);
+}
+​
 div::before {
   content: "class: " attr(class);
+}*/
+
+nav, ul {
+  border: 1px solid darkgreen;
 }
